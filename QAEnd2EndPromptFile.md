@@ -259,7 +259,7 @@ Please perform the following Git operations:
 
 ## 🎬 Complete Workflow Execution
 
-**Single Combined Prompt (for Video Demo):**
+**Single Combined Prompt:**
 ```
 I want to demonstrate a complete end-to-end QA workflow using natural language and MCP servers.
 
