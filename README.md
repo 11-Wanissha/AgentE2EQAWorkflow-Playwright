@@ -2,8 +2,6 @@
 
 An example of using specialized AI agents, Playwright, and MCP browser tools to turn a user story into a reviewed test plan, exploratory findings, automated end-to-end tests, and an execution report.
 
-The sample project applies this workflow to **SCRUM-101**, an e-commerce checkout story tested against the public SauceDemo application. It demonstrates QA automation and reporting; it does not implement the application itself.
-
 ## Agentic QA workflow
 
 The workflow is defined in [QAEnd2EndPromptFile.md](QAEnd2EndPromptFile.md) and proceeds in reviewable stages:
@@ -16,7 +14,7 @@ The workflow is defined in [QAEnd2EndPromptFile.md](QAEnd2EndPromptFile.md) and 
 6. **Report** — document execution status, findings, defect evidence, acceptance-criteria coverage, and remaining risks.
 7. **Review and publish** — inspect the artifacts and Git diff, then commit and push through the repository's normal review and security process.
 
-The agents are defined under `.github/agents/`. Human review is important: agents can propose coverage and code, but observed behavior must be compared with the story, and known defects must not be reported as passing acceptance criteria.
+Human review is important: agents can propose coverage and code, but observed behavior must be compared with the story, and known defects must not be reported as passing acceptance criteria.
 
 ## Quick start
 
@@ -60,4 +58,4 @@ Configure browser and other MCP servers locally in VS Code. Keep `.vscode/mcp.js
 
 ## Current sample findings
 
-The checkout happy path and required-field validation were exercised. The report also records observed gaps, including a missing cart total, checkout with an empty cart, permissive malformed input, and overview cancellation returning to inventory instead of the cart. Some automation cases intentionally characterize these current behaviors; a passing characterization test does **not** mean the corresponding requirement is satisfied.
+The checkout happy path and required-field validation were exercised. The report also records observed gaps, including a missing cart total, checkout with an empty cart, permissive malformed input, and overview cancellation returning to inventory instead of the cart.
