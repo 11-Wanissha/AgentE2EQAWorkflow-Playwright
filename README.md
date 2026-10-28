@@ -1,8 +1,8 @@
-# Agentic End-to-End QA Workflow
+# End-to-End QA Workflow
 
 An example of using specialized AI agents, Playwright, and MCP browser tools to turn a user story into a reviewed test plan, exploratory findings, automated end-to-end tests, and an execution report.
 
-## Agentic QA workflow
+## QA workflow
 
 The workflow is defined in [QAEnd2EndPromptFile.md](QAEnd2EndPromptFile.md) and proceeds in reviewable stages:
 
